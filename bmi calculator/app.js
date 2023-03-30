@@ -3,8 +3,8 @@ var btn = document.getElementById("calculateBtn");
 btn.addEventListener("click", calculateBmi);
 
 function calculateBmi() {
-  var weightInput = parseInt(document.getElementById("weightInput").value);
-  var heightInput = parseInt(document.getElementById("heightInput").value);
+  var weightInput = parseFloat(document.getElementById("weightInput").value);
+  var heightInput = parseFloat(document.getElementById("heightInput").value);
   var signal = document.getElementById("signal");
   var result = document.getElementById("output");
   var weight_status = false,
@@ -26,8 +26,8 @@ function calculateBmi() {
   }
 
   if (weight_status && height_status) {
-    heightInput = heightInput / 100;
-    var bmi = (weightInput / Math.pow(heightInput, 2)).toFixed(2);
+
+   var bmi = (weightInput / (heightInput*heightInput)).toFixed(2);
 
     if (bmi < 18.6) {
       result.innerHTML = "Under weight : " + bmi;
