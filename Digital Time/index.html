@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digital Clock</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h3>Digital Clock</h3>
+    <div id="clock">
+       
+        <div id="hours"></div><span>:</span>
+        <div id="minutes"></div><span>:</span>
+        <div id="seconds"></div>
+        <div id="ampm"></div>
+       
+
+    </div>
+    <script>
+      function updateTime() {
+     
+        var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+
+        
+      
+        minutes = (minutes < 10 ? "0" : "") + minutes;
+        seconds = (seconds < 10 ? "0" : "") + seconds;
+
+      
+        var displayHours = hours;
+        var ampm = "";
+        if (hours > 12) {
+          displayHours = hours - 12;
+          displayHours = (displayHours<10? "0": "") + displayHours;
+          ampm = "PM";
+        } else if (hours == 12) {
+          displayHours = 12;
+          ampm = "PM";
+        } else if (hours == 0) {
+          displayHours = 12;
+          ampm = "AM";
+        } else {
+          ampm = "AM";
+        }
+
+        // var timeString =
+        //   displayHours + ":" + minutes + ":" + seconds + " " + ampm;
+        
+        document.getElementById("hours").innerHTML = displayHours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+        document.getElementById("ampm").innerHTML = ampm;
+        
+        
+      }
+
+     
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>
