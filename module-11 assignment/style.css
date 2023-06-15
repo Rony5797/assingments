@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #ff0000; /* CSS variable for primary color */
+    --secondary-color: #0000ff; /* CSS variable for secondary color */
+    --heading-font-size: 24px; /* CSS variable for heading font size */
+    --container-width: 500px; /* CSS variable for container width */
+    --container-height: 300px; /* CSS variable for container height */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: var(--primary-color); /* Using CSS variable for text color */
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    width: var(--container-width);
+    height: var(--container-height);
+  }
+  
+  h1 {
+    color: var(--secondary-color); /* Using CSS variable for heading color */
+    font-size: var(--heading-font-size);
+    text-align: center;
+  }
+  
+  ul li:first-child {
+    font-weight: bold;
+  }
+  
+  img {
+    width: 200px;
+    height: 150px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table, th, td {
+    border: 1px solid var(--secondary-color); /* Using CSS variable for border color */
+  }
+  
+  table tr:hover {
+    background-color: #cccccc;
+  }
+  
+  th {
+    background-color: var(--secondary-color);
+    color: #ffffff; /* Changing text color within table headers */
+  }
+  
+  td:first-child {
+    background-color: #ffff00;
+  }
+  
+  tr:last-child td {
+    background-color: #ff00ff;
+  }
+  
+  a:hover {
+    color: #00ff00; /* Changing link color on hover */
+  }
+  
+  a:active {
+    color: #000000; /* Changing link color when clicked */
+  }
+  
+  .container::before {
+    content: 'Decorative Content'; /* Adding content before the container */
+    font-weight: bold;
+  }
+  
+  /* Applying margins, padding, and borders to various elements */
+  h1, p, ul, img, table {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
