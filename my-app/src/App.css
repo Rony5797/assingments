@@ -1,0 +1,32 @@
+.container{
+  text-align: center;
+  
+}
+.content .input-field{
+  margin: 10px auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  
+}
+.content textarea {
+  width: 30%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-right: 2rem;
+}
+.content input{
+  padding: 10px;
+  font-size: 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin: 10px 10px;
+}
+.display{
+  margin-top: 10px;
+  font-size: 20px;
+}
