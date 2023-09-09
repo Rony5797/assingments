@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "64fc962387ae369bc698d698"
+  },
+  "department": "Sales",
+  "salary": 10000
+},{
+  "_id": {
+    "$oid": "64fc962387ae369bc698d699"
+  },
+  "department": "Marketing",
+  "salary": 8000
+},{
+  "_id": {
+    "$oid": "64fc962387ae369bc698d69a"
+  },
+  "department": "Development",
+  "salary": 20000
+}]

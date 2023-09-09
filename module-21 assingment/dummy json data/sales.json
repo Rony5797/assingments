@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "64fc752cc4e094e52a7a5f26"
+  },
+  "product": "Product 1",
+  "quantity": 10,
+  "price": 100,
+  "date": {
+    "$date": "2023-09-01T00:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64fc752cc4e094e52a7a5f27"
+  },
+  "product": "Product 2",
+  "quantity": 20,
+  "price": 200,
+  "date": {
+    "$date": "2023-09-02T00:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64fc752cc4e094e52a7a5f28"
+  },
+  "product": "Product 3",
+  "quantity": 30,
+  "price": 300,
+  "date": {
+    "$date": "2023-09-03T00:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64fc754ec4e094e52a7a5f29"
+  },
+  "product": "Product 4",
+  "quantity": 40,
+  "price": 400,
+  "date": {
+    "$date": "2023-08-04T00:00:00.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64fc757dc4e094e52a7a5f2a"
+  },
+  "product": "Product 5",
+  "quantity": 50,
+  "price": 500,
+  "date": {
+    "$date": "2023-09-05T00:00:00.000Z"
+  }
+}]
